@@ -1,0 +1,30 @@
+@import './base.css';
+
+#app {
+
+}
+
+a,
+.orange {
+  text-decoration: none;
+  color: hsl(196, 76%, 39%);
+  transition: 0.4s;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(204, 69%, 33%, 0.5);
+    border-radius: 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
